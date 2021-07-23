@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - StarWarsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>StarWarsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/demo.thread.services.html">demo.thread.services</a> &gt; StarWarsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">12.697s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldCallStarWarsPeopleApiClient()</td>
+<td class="success">1.778s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCallStarWarsPeopleApiClientAndHandleANotFoundPeople()</td>
+<td class="success">0.248s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldGetNPeopleFromStarWarsPeopleApi()</td>
+<td class="success">8.131s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldGetNPeopleFromStarWarsPeopleApiUsingCustomThreadPool()</td>
+<td class="success">1.464s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldGetNPeopleFromStarWarsPeopleApiUsingThreadsFromCommonPool()</td>
+<td class="success">1.076s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:16:20.253 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:16:20.266 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:16:20.296 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [demo.thread.services.StarWarsTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:16:20.311 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [demo.thread.services.StarWarsTest], using SpringBootContextLoader
+16:16:20.315 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [demo.thread.services.StarWarsTest]: class path resource [demo/thread/services/StarWarsTest-context.xml] does not exist
+16:16:20.315 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [demo.thread.services.StarWarsTest]: class path resource [demo/thread/services/StarWarsTestContext.groovy] does not exist
+16:16:20.316 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [demo.thread.services.StarWarsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:16:20.316 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [demo.thread.services.StarWarsTest]: StarWarsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:16:20.354 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [demo.thread.services.StarWarsTest]
+16:16:20.411 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/naka/Documents/git/github/thread/build/classes/java/main/demo/thread/ThreadApplication.class]
+16:16:20.412 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration demo.thread.ThreadApplication for test class demo.thread.services.StarWarsTest
+16:16:20.492 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [demo.thread.services.StarWarsTest]: using defaults.
+16:16:20.493 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:16:20.503 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+16:16:20.504 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+16:16:20.504 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:16:20.505 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@618e3c05, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1171a1cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d99414f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c4025d5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1cbe5e4c, org.springframework.test.context.event.EventPublishingTestExecutionListener@ddf3d6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@175949bb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1a3ab808, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7418d93d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b34c72b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@467d5167, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9c84b58, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@3b2bba6d, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@61b3fbc]
+16:16:20.508 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@250acfdc testClass = StarWarsTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@16619d27 testClass = StarWarsTest, locations = '{}', classes = '{class demo.thread.ThreadApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7efe6125, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55a6c584, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@26242772, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@24c5a587, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@120716f0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@40212ffd], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+16:16:20.555 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.3)
+
+2021-07-23 16:16:21.896  INFO 70207 --- [    Test worker] demo.thread.services.StarWarsTest        : Starting StarWarsTest using Java 11.0.11 on BR0C02FQ47XMD6M with PID 70207 (started by naka in /Users/naka/Documents/git/github/thread)
+2021-07-23 16:16:21.897  INFO 70207 --- [    Test worker] demo.thread.services.StarWarsTest        : No active profile set, falling back to default profiles: default
+2021-07-23 16:16:22.573  INFO 70207 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6ad4bb82-dbc1-3d48-98b7-7768e69fd854
+2021-07-23 16:16:23.046  INFO 70207 --- [    Test worker] demo.thread.services.StarWarsTest        : Started StarWarsTest in 2.487 seconds (JVM running for 3.573)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Jul 23, 2021, 4:16:35 PM</p>
+</div>
+</div>
+</body>
+</html>
